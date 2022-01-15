@@ -1,15 +1,17 @@
 # meowshield
+
 meowshield shields against bad guys!!11!!1111!!!1!!1 (on scratch)
 
 ## using it
+
 Thanks for being an epic person and helping defend against bad hackers!
 
 ### global instructions
+
 Copy the content of `.env.example` into a new file `.env` and replace `kaj` on the first line with your username and `kajdahecker` on the next line with your password (this is for logging in, you can use a different spare account for this - it doesn't need to have scratcher status)
 
-
-
 ### python 3
+
 Recommended version is 3.7+ (no python2 support sorry)
 
 You will need to have:
@@ -20,6 +22,7 @@ You will need to have:
 Now run `meowshield.py` and the script should start
 
 ## contributing
+
 Awesome!! Thanks for being interested!
 
 You can ask to join or look around in https://scratch.mit.edu/studios/30926232/ if you want.
