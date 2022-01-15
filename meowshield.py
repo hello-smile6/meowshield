@@ -1,8 +1,20 @@
 # Loads env file
-from dotenv import dotenv_values
-
-secrets = dotenv_values(".env")
-
+# Don't use .env on Replit
+import os
+secrets = { }
+if ("REPL_SLUG" in os.environ and "REPLIT_DB_URL" in os.environ and "REPL_ID" in os.environ and "REPL_IMAGE" in os.environ and "REPL_LANGUAGE" in os.environ and "REPL_OWNER" in os.environ and "REPL_PUBKEYS" in os.environ and "REPL_SLUG" in os.environ) or os.environ.get("force-os-env") is "yes":
+  print("Using os.environ for env.")
+  secrets = os.environ
+else:
+  print("Using .env file for env.")
+  from dotenv import dotenv_values
+  try:
+    secrets = dotenv_values(".env")
+  except:
+    print("Loading .env file failed, using os.environ")
+    secrets = os.environ
+if not ( "SCRATCH_USERNAME" in secrets and "SCRATCH_PASSWORD" in secrets ):
+  raise Exception("Username not found.")
 # Import dependency
 from scratchclient import ScratchSession
 from datetime import datetime
