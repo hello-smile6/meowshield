@@ -20,6 +20,8 @@ You will need to have:
 Now run `meowshield.py` and the script should start
 
 ## contributing
-yay contributor! awesome!! thanks for being interested
-ok so you can join https://scratch.mit.edu/studios/30926232/ if you want.
-it's nice if you can make an issue first for what you are looking for. please make sure you follow the community guidelines while 
+Awesome!! Thanks for being interested!
+
+You can ask to join or look around in https://scratch.mit.edu/studios/30926232/ if you want.
+
+It's nice if you can make an issue first for what you are looking for. Please make sure you follow the community guidelines while doing anything related to meowshield.
